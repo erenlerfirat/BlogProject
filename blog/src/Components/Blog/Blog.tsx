@@ -1,4 +1,3 @@
-import React from 'react'
 import { BlogModel } from '../../Models/BlogModel'
 
 function Blog(props:BlogModel) {
@@ -6,10 +5,9 @@ function Blog(props:BlogModel) {
       <>
           <h3>{props.title}</h3>
           <ul>
-              <li>{props.id}</li>
-              <li>{props.category}</li>
-          </ul>
-          
+              <li>{props.author}</li>
+              <img src={props.img} alt=''></img>
+          </ul>          
           <p>{props.description}</p>
       </>
   )
