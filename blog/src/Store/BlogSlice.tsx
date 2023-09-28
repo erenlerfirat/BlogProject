@@ -1,19 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialBlogState = { isAuthenticated: true }
+interface BlogState{ isRead: Boolean }
+    
+const initialBlogState : BlogState = { isRead: false }
 
 const blogSlice = createSlice({
     name: 'blog',
     initialState: initialBlogState,
     reducers: {
-      login(state) {
-        state.isAuthenticated = true;
+      AddBlog(state,action) {
+        state.isRead = action.payload;
       },
-      logout(state) {
-        state.isAuthenticated = false;
+      DeleteBlog(state,action) {
+        state.isRead = action.payload;
       },
     },
   });
 
-export const blogActions = blogSlice.actions ;
+export const {AddBlog,DeleteBlog} = blogSlice.actions ;
 export default blogSlice.reducer;
