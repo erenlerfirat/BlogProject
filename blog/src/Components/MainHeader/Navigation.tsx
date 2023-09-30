@@ -7,9 +7,9 @@ const Navigation = (props:any) => {
 		<h1 className="your-logo-area">MY</h1>
 		<nav>
 			<ul className={classes["nav_links"]}>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="https://github.com/erenlerfirat">Home</a></li>
+				<li><a href="https://github.com/erenlerfirat">Blog</a></li>
+				<li><a href="https://github.com/erenlerfirat">About</a></li>
 			</ul>
       </nav>      
       <button className={classes.btn}>Contact</button>      
