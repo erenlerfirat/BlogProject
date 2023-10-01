@@ -1,10 +1,10 @@
 import classes from './Navigation.module.css';
 
-const Navigation = (props:any) => {
+const Navigation = () => {
   return (
     
     <header className={classes.header}>
-		<h1 className="your-logo-area">MY</h1>
+		<h1 className="your-logo-area">MY BLOG</h1>
 		<nav>
 			<ul className={classes["nav_links"]}>
 				<li><a href="https://github.com/erenlerfirat">Home</a></li>
